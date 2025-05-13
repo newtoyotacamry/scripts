@@ -1,8 +1,3 @@
--- before calling this loader you do:
---    userKey = "Jg2XitZ265dIJ1EdfQrI7ubz"
---    auto    = "false"   -- or "true"
---    loadstring(game:HttpGet("https://raw.githubusercontent.com/newtoyotacamry/scripts/refs/heads/main/NoxHubLoader"))()
-
 -- ▶︎ SERVICES & CONFIG
 local HttpService   = game:GetService("HttpService")
 local Analytics     = game:GetService("RbxAnalyticsService")
