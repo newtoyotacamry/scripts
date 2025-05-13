@@ -1,38 +1,36 @@
--- ▶︎ CONFIGURE THIS:
-local userKey = (function()
-    -- try file:
-    if isfile and readfile and isfile("NoxHub/key.txt") then
-        return readfile("NoxHub/key.txt"):gsub("%s+", "")
-    end
-    -- or hard-code:
-    -- return "YOUR-LICENSE-KEY-HERE"
-end)()
-if not userKey or userKey == "" then
-    error("❌ No userKey found")
-end
+-- ▶︎ SERVICES & CONSTANTS
+local HttpService   = game:GetService("HttpService")
+local Analytics     = game:GetService("RbxAnalyticsService")
+local SECRET_KEY    = "efea913cc33b085341e2cda7d8c07f4fb2f9be57e820aeb5269745ba1c8001ec"
+local BASE_URL      = "https://roblox-licensing-1.onrender.com"
+local CHALLENGE_URL = BASE_URL .. "/loader/challenge"
+local VALIDATE_URL  = BASE_URL .. "/loader/validate"
 
--- ▶︎ SETUP SERVICES & ALIASES:
-local HttpService = game:GetService("HttpService")
-local Analytics   = game:GetService("RbxAnalyticsService")
-
--- unify HTTP request fn:
+-- ▶︎ UNIFY HTTP REQUEST FUNCTION
 local http_request = (syn and syn.request)
                   or (http and http.request)
                   or request
                   or http_request
+
 if not http_request then
-    error("❌ No supported HTTP request function found")
+    error("❌ No supported HTTP request function found; your exploit may not allow HTTP")
 end
 
--- ▶︎ FETCH UTILS:
+-- ▶︎ HELPERS
+local function simpleHMAC(input, key)
+    return HttpService:UrlEncode(input .. key)
+end
+
 local function fetch(url, method, body)
     local ok, res = pcall(http_request, {
         Url     = url,
         Method  = method,
-        Headers = {["Content-Type"]="application/json"},
+        Headers = {["Content-Type"] = "application/json"},
         Body    = body or ""
     })
-    if not ok then error("❌ HTTP request failed") end
+    if not ok then
+        error("❌ HTTP request failed: "..tostring(res))
+    end
     return (res.Body or res)
 end
 
@@ -41,21 +39,26 @@ local function safeDecode(raw)
     return ok and dec or nil, ok and nil or dec
 end
 
--- ▶︎ GATHER ID DATA:
+-- ▶︎ PRECHECK
+if not userKey or type(userKey) ~= "string" or userKey == "" then
+    error("❌ No userKey found")
+end
+
+-- ▶︎ METADATA
 local hwid   = tostring(Analytics:GetClientId())
 local gameId = tostring(game.GameId)
 
--- ▶︎ CHALLENGE:
-local challRaw = fetch("https://roblox-licensing-1.onrender.com/loader/challenge", "POST", "")
+-- ▶︎ CHALLENGE
+local challRaw = fetch(CHALLENGE_URL, "POST", "")
 local chall, err = safeDecode(challRaw)
 if not chall or type(chall.nonce) ~= "string" then
     error("❌ Invalid challenge response")
 end
 
--- ▶︎ SIGN & VALIDATE:
+-- ▶︎ SIGN & VALIDATE
 local ts        = tostring(os.time())
-local tokenData = chall.nonce..":"..ts..":"..userKey
-local clientSig = HttpService:UrlEncode(tokenData.."efea913cc33b085341e2cda7d8c07f4fb2f9be57e820aeb5269745ba1c8001ec")  -- replace with your SECRET_KEY
+local tokenData = chall.nonce .. ":" .. ts .. ":" .. userKey
+local clientSig = simpleHMAC(tokenData, SECRET_KEY)
 
 local validateBody = HttpService:JSONEncode({
     key       = userKey,
@@ -64,19 +67,29 @@ local validateBody = HttpService:JSONEncode({
     nonce     = chall.nonce,
     timestamp = ts,
     sig       = clientSig,
+    auto      = auto,
 })
 
-local validateRaw = fetch("https://roblox-licensing-1.onrender.com/loader/validate", "POST", validateBody)
+local validateRaw = fetch(VALIDATE_URL, "POST", validateBody)
 local resp, respErr = safeDecode(validateRaw)
 if not resp then
     error("❌ Invalid validate response: "..tostring(respErr))
 end
-if type(resp.code) ~= "string" or type(resp.session) ~= "string" then
-    error("❌ Validation failed")
+if type(resp.code) ~= "string" then
+    error("❌ No script code returned.")
+end
+if type(resp.session) ~= "string" then
+    error("❌ No session returned.")
 end
 
--- ▶︎ INSTALL SESSION & LAUNCH:
-_G._session = { token = resp.session, key = userKey, hwid = hwid }
+-- ▶︎ LAUNCH
+_G._session = {
+    token = resp.session,
+    key   = userKey,
+    hwid  = hwid,
+}
 local fn, loadErr = loadstring(resp.code)
-if not fn then error("❌ loadstring failed: "..tostring(loadErr)) end
+if not fn then
+    error("❌ loadstring failed: "..tostring(loadErr))
+end
 fn()
