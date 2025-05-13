@@ -1,45 +1,83 @@
-local HttpService  = game:GetService("HttpService")
-local http_request = (syn and syn.request)
-                  or (http and http.request)
-                  or request
-                  or http_request
-if not http_request then
-    error("Tampering Detected")
-end
-local function die(msg)
-    if msg then warn("✖ "..msg) end
-    while true do task.wait(9e9) end
-end
-local function post(bodyTbl)
-    local body = HttpService:JSONEncode(bodyTbl)
-    local ok, res = pcall(http_request, {
-        Url     = "https://roblox-licensing-1.onrender.com/script/activate",
-        Method  = "POST",
-        Headers = { ["Content-Type"] = "application/json" },
-        Body    = body,
-    })
-    if not ok then
-        warn("Tampering Detected", res)
-        return nil
-    end
-    return (res.Body or res)
-end
-return (function()
-    local session = _G._session
-    _G._session    = nil
-    if type(session) ~= "table"
-    or type(session.token) ~= "string"
-    or type(session.key)   ~= "string"
-    or type(session.hwid)  ~= "string" then
-        die("Tampering detected")
-    end
-    local raw = post({ token = session.token, key = session.key, hwid = session.hwid })
-    if not raw then die("Tampering Detected") end
 
-    local resp = HttpService:JSONDecode(raw)
-    if resp.status ~= "ok" then
-        die("Tampering Detected")
+local HttpService = game:GetService("HttpService")
+local Analytics   = game:GetService("RbxAnalyticsService")
+local SECRET_KEY    = "efea913cc33b085341e2cda7d8c07f4fb2f9be57e820aeb5269745ba1c8001ec"
+local BASE_URL      = "https://roblox-licensing-1.onrender.com"
+local CHALLENGE_URL = BASE_URL .. "/loader/challenge"
+local VALIDATE_URL  = BASE_URL .. "/loader/validate"
+local function simpleHMAC(input, key)
+    return HttpService:UrlEncode(input .. key)
+end
+local function fetch(url, method, body)
+    local hdrs = { ["Content-Type"] = "application/json" }
+    if syn and syn.request then
+        return syn.request({Url=url,Method=method,Headers=hdrs,Body=body}).Body
+    elseif request or http_request then
+        return (request or http_request)({Url=url,Method=method,Headers=hdrs,Body=body}).Body
     end
+    local ok, res = pcall(function()
+        return HttpService:RequestAsync({Url=url,Method=method,Headers=hdrs,Body=body or ""})
+    end)
+    if not ok or not res.Success then
+        error("❌ Tampering Detected")
+    end
+    return res.Body
+end
+local function safeDecode(raw)
+    local ok, dec = pcall(HttpService.JSONDecode, HttpService, raw)
+    return ok and dec or nil, ok and nil or dec
+end
+if not userKey or type(userKey) ~= "string" or userKey == "" then
+    error("❌ No userKey found")
+end
+local hwid   = Analytics:GetClientId()
+local gameId = tostring(game.GameId)
+local challRaw
+do
+    local ok, err = pcall(function()
+        challRaw = fetch(CHALLENGE_URL, "POST", "")
+    end)
+    if not ok then error("❌ Tampering Detected") end
+end
+local chall, err = safeDecode(challRaw)
+if not chall or type(chall.nonce) ~= "string" then
+    error("❌ Tampering Detected")
+end
+local ts        = tostring(os.time())
+local tokenData = chall.nonce .. ":" .. ts .. ":" .. userKey
+local clientSig = simpleHMAC(tokenData, SECRET_KEY)
 
-    -- success, run the script
-end)()
+local validateBody = HttpService:JSONEncode({
+    key       = userKey,
+    hwid      = hwid,
+    gameId    = gameId,
+    nonce     = chall.nonce,
+    timestamp = ts,
+    sig       = clientSig,
+    auto = auto,
+})
+
+local validateRaw
+do
+    local ok, err = pcall(function()
+        validateRaw = fetch(VALIDATE_URL, "POST", validateBody)
+    end)
+    if not ok then error("❌ Error fetching validate: " .. tostring(err)) end
+end
+
+local resp, respErr = safeDecode(validateRaw)
+if not resp then
+    error("❌ Invalid validate response: " .. tostring(respErr))
+end
+if type(resp.code)    ~= "string" then error("❌ No script code returned.")    end
+if type(resp.session) ~= "string" then error("❌ Tampering Detected")      end
+_G._session = {
+    token = resp.session,
+    key   = userKey,
+    hwid  = hwid
+}
+local fn, loadErr = loadstring(resp.code)
+if not fn then
+    error("❌ loadstring failed: " .. tostring(loadErr))
+end
+fn()
