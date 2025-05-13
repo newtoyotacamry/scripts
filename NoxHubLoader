@@ -1,57 +1,38 @@
-
--- ─────────────────────────────────────────────────────────────────────────────
--- ▶︎ CONFIGURATION (globals you set before loading)
--- ─────────────────────────────────────────────────────────────────────────────
-if type(userKey) ~= "string" or userKey == "" then
-    error("❌ No userKey defined. Set `userKey = \"...\"` before loading the script.")
+-- ▶︎ CONFIGURE THIS:
+local userKey = (function()
+    -- try file:
+    if isfile and readfile and isfile("NoxHub/key.txt") then
+        return readfile("NoxHub/key.txt"):gsub("%s+", "")
+    end
+    -- or hard-code:
+    -- return "YOUR-LICENSE-KEY-HERE"
+end)()
+if not userKey or userKey == "" then
+    error("❌ No userKey found")
 end
 
--- coerce `auto` into a boolean: accept true/false or "true"/"false"
-local autoFlag = (auto == true) or (auto == "true")
-
--- ─────────────────────────────────────────────────────────────────────────────
--- ▶︎ SERVICES & ENDPOINTS
--- ─────────────────────────────────────────────────────────────────────────────
+-- ▶︎ SETUP SERVICES & ALIASES:
 local HttpService = game:GetService("HttpService")
 local Analytics   = game:GetService("RbxAnalyticsService")
 
-local BASE_URL      = "https://roblox-licensing-1.onrender.com"
-local CHALLENGE_URL = BASE_URL .. "/loader/challenge"
-local VALIDATE_URL  = BASE_URL .. "/loader/validate"
-
--- sanity check
-assert(type(CHALLENGE_URL) == "string", "CHALLENGE_URL is nil")
-assert(type(VALIDATE_URL)  == "string", "VALIDATE_URL is nil")
-
--- ─────────────────────────────────────────────────────────────────────────────
--- ▶︎ HTTP REQUEST ALIAS
--- ─────────────────────────────────────────────────────────────────────────────
+-- unify HTTP request fn:
 local http_request = (syn and syn.request)
                   or (http and http.request)
                   or request
                   or http_request
-
 if not http_request then
-    error("❌ No supported HTTP request function found; your exploit may not allow HTTP")
+    error("❌ No supported HTTP request function found")
 end
 
--- ─────────────────────────────────────────────────────────────────────────────
--- ▶︎ HELPERS
--- ─────────────────────────────────────────────────────────────────────────────
-local function simpleHMAC(input, key)
-    return HttpService:UrlEncode(input .. key)
-end
-
+-- ▶︎ FETCH UTILS:
 local function fetch(url, method, body)
     local ok, res = pcall(http_request, {
         Url     = url,
         Method  = method,
-        Headers = { ["Content-Type"] = "application/json" },
+        Headers = {["Content-Type"]="application/json"},
         Body    = body or ""
     })
-    if not ok then
-        error(("❌ HTTP %s %s failed: %s"):format(method, url, tostring(res)))
-    end
+    if not ok then error("❌ HTTP request failed") end
     return (res.Body or res)
 end
 
@@ -60,61 +41,42 @@ local function safeDecode(raw)
     return ok and dec or nil, ok and nil or dec
 end
 
--- ─────────────────────────────────────────────────────────────────────────────
--- ▶︎ GATHER METADATA
--- ─────────────────────────────────────────────────────────────────────────────
+-- ▶︎ GATHER ID DATA:
 local hwid   = tostring(Analytics:GetClientId())
 local gameId = tostring(game.GameId)
 
--- ─────────────────────────────────────────────────────────────────────────────
--- ▶︎ 1) CHALLENGE STEP
--- ─────────────────────────────────────────────────────────────────────────────
-local challRaw = fetch(CHALLENGE_URL, "POST", "")
-local chall, challErr = safeDecode(challRaw)
+-- ▶︎ CHALLENGE:
+local challRaw = fetch("https://roblox-licensing-1.onrender.com/loader/challenge", "POST", "")
+local chall, err = safeDecode(challRaw)
 if not chall or type(chall.nonce) ~= "string" then
-    error("❌ Invalid challenge response: "..tostring(challErr))
+    error("❌ Invalid challenge response")
 end
 
--- ─────────────────────────────────────────────────────────────────────────────
--- ▶︎ 2) SIGN & VALIDATE
--- ─────────────────────────────────────────────────────────────────────────────
+-- ▶︎ SIGN & VALIDATE:
 local ts        = tostring(os.time())
-local tokenData = chall.nonce .. ":" .. ts .. ":" .. userKey
-local clientSig = simpleHMAC(tokenData, SECRET_KEY)
+local tokenData = chall.nonce..":"..ts..":"..userKey
+local clientSig = HttpService:UrlEncode(tokenData.."efea913cc33b085341e2cda7d8c07f4fb2f9be57e820aeb5269745ba1c8001ec")  -- replace with your SECRET_KEY
 
-local payload = {
+local validateBody = HttpService:JSONEncode({
     key       = userKey,
     hwid      = hwid,
     gameId    = gameId,
     nonce     = chall.nonce,
     timestamp = ts,
     sig       = clientSig,
-    auto      = autoFlag,
-}
+})
 
-local validateRaw, validateErr = fetch(VALIDATE_URL, "POST", HttpService:JSONEncode(payload)), nil
-local resp,   respErr     = safeDecode(validateRaw)
+local validateRaw = fetch("https://roblox-licensing-1.onrender.com/loader/validate", "POST", validateBody)
+local resp, respErr = safeDecode(validateRaw)
 if not resp then
     error("❌ Invalid validate response: "..tostring(respErr))
 end
-if type(resp.code) ~= "string" then
-    error("❌ No script code returned.")
-end
-if type(resp.session) ~= "string" then
-    error("❌ No session returned.")
+if type(resp.code) ~= "string" or type(resp.session) ~= "string" then
+    error("❌ Validation failed")
 end
 
--- ─────────────────────────────────────────────────────────────────────────────
--- ▶︎ 3) LAUNCH
--- ─────────────────────────────────────────────────────────────────────────────
-_G._session = {
-    token = resp.session,
-    key   = userKey,
-    hwid  = hwid,
-}
-
+-- ▶︎ INSTALL SESSION & LAUNCH:
+_G._session = { token = resp.session, key = userKey, hwid = hwid }
 local fn, loadErr = loadstring(resp.code)
-if not fn then
-    error("❌ loadstring failed: "..tostring(loadErr))
-end
+if not fn then error("❌ loadstring failed: "..tostring(loadErr)) end
 fn()
