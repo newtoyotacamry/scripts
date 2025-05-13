@@ -1,3 +1,20 @@
+-- right after you pick http_request:
+print(">> http_request alias is:", http_request)
+
+-- inside fetch(), before the pcall:
+print(">> FETCH:", method, url, "body:", body)
+
+-- and in your challenge and validate steps:
+print(">> Challenging…")
+local challRaw = fetch(CHALLENGE_URL, "POST", "")
+print(">> Raw challenge response:", challRaw)
+
+-- likewise before and after your validate POST:
+print(">> Validating with payload:", HttpService:JSONEncode(payload))
+local validateRaw = fetch(VALIDATE_URL, "POST", HttpService:JSONEncode(payload))
+print(">> Raw validate response:", validateRaw)
+
+
 -- ▶︎ SERVICES & CONFIG
 local HttpService   = game:GetService("HttpService")
 local Analytics     = game:GetService("RbxAnalyticsService")
@@ -95,3 +112,4 @@ if not fn then
     error("❌ loadstring failed: " .. tostring(loadErr))
 end
 fn()
+
