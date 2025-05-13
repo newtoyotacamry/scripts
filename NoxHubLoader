@@ -1,4 +1,9 @@
--- ▶︎ SERVICES & CONSTANTS
+-- before calling this loader you do:
+--    userKey = "Jg2XitZ265dIJ1EdfQrI7ubz"
+--    auto    = "false"   -- or "true"
+--    loadstring(game:HttpGet("https://raw.githubusercontent.com/newtoyotacamry/scripts/refs/heads/main/NoxHubLoader"))()
+
+-- ▶︎ SERVICES & CONFIG
 local HttpService   = game:GetService("HttpService")
 local Analytics     = game:GetService("RbxAnalyticsService")
 local SECRET_KEY    = "efea913cc33b085341e2cda7d8c07f4fb2f9be57e820aeb5269745ba1c8001ec"
@@ -6,14 +11,21 @@ local BASE_URL      = "https://roblox-licensing-1.onrender.com"
 local CHALLENGE_URL = BASE_URL .. "/loader/challenge"
 local VALIDATE_URL  = BASE_URL .. "/loader/validate"
 
--- ▶︎ UNIFY HTTP REQUEST FUNCTION
+-- ▶︎ READ GLOBALS & PRECHECK
+if type(userKey) ~= "string" or userKey == "" then
+    error("❌ No userKey found – set `userKey = \"...\"` before loading.")
+end
+-- coerce auto flag (accepts boolean or string "true"/"false")
+local autoFlag = (auto == true) or (auto == "true")
+
+-- ▶︎ UNIFY HTTP REQUEST
 local http_request = (syn and syn.request)
                   or (http and http.request)
                   or request
                   or http_request
 
 if not http_request then
-    error("❌ No supported HTTP request function found; your exploit may not allow HTTP")
+    error("❌ No supported HTTP request function found; your executor may not allow HTTP")
 end
 
 -- ▶︎ HELPERS
@@ -25,11 +37,11 @@ local function fetch(url, method, body)
     local ok, res = pcall(http_request, {
         Url     = url,
         Method  = method,
-        Headers = {["Content-Type"] = "application/json"},
+        Headers = { ["Content-Type"] = "application/json" },
         Body    = body or ""
     })
     if not ok then
-        error("❌ HTTP request failed: "..tostring(res))
+        error("❌ HTTP request failed: " .. tostring(res))
     end
     return (res.Body or res)
 end
@@ -39,41 +51,36 @@ local function safeDecode(raw)
     return ok and dec or nil, ok and nil or dec
 end
 
--- ▶︎ PRECHECK
-if not userKey or type(userKey) ~= "string" or userKey == "" then
-    error("❌ No userKey found")
-end
-
--- ▶︎ METADATA
+-- ▶︎ GATHER METADATA
 local hwid   = tostring(Analytics:GetClientId())
 local gameId = tostring(game.GameId)
 
--- ▶︎ CHALLENGE
+-- ▶︎ CHALLENGE STEP
 local challRaw = fetch(CHALLENGE_URL, "POST", "")
 local chall, err = safeDecode(challRaw)
 if not chall or type(chall.nonce) ~= "string" then
     error("❌ Invalid challenge response")
 end
 
--- ▶︎ SIGN & VALIDATE
+-- ▶︎ SIGNATURE & VALIDATE
 local ts        = tostring(os.time())
 local tokenData = chall.nonce .. ":" .. ts .. ":" .. userKey
 local clientSig = simpleHMAC(tokenData, SECRET_KEY)
 
-local validateBody = HttpService:JSONEncode({
+local payload = {
     key       = userKey,
     hwid      = hwid,
     gameId    = gameId,
     nonce     = chall.nonce,
     timestamp = ts,
     sig       = clientSig,
-    auto      = auto,
-})
+    auto      = autoFlag
+}
 
-local validateRaw = fetch(VALIDATE_URL, "POST", validateBody)
+local validateRaw = fetch(VALIDATE_URL, "POST", HttpService:JSONEncode(payload))
 local resp, respErr = safeDecode(validateRaw)
 if not resp then
-    error("❌ Invalid validate response: "..tostring(respErr))
+    error("❌ Invalid validate response: " .. tostring(respErr))
 end
 if type(resp.code) ~= "string" then
     error("❌ No script code returned.")
@@ -82,7 +89,7 @@ if type(resp.session) ~= "string" then
     error("❌ No session returned.")
 end
 
--- ▶︎ LAUNCH
+-- ▶︎ LAUNCH THE SCRIPT
 _G._session = {
     token = resp.session,
     key   = userKey,
@@ -90,6 +97,6 @@ _G._session = {
 }
 local fn, loadErr = loadstring(resp.code)
 if not fn then
-    error("❌ loadstring failed: "..tostring(loadErr))
+    error("❌ loadstring failed: " .. tostring(loadErr))
 end
 fn()
