@@ -1,48 +1,61 @@
-
-local HttpService = game:GetService("HttpService")
-local Analytics   = game:GetService("RbxAnalyticsService")
+-- ▶︎ SERVICES & CONSTANTS
+local HttpService   = game:GetService("HttpService")
+local Analytics     = game:GetService("RbxAnalyticsService")
 local SECRET_KEY    = "efea913cc33b085341e2cda7d8c07f4fb2f9be57e820aeb5269745ba1c8001ec"
 local BASE_URL      = "https://roblox-licensing-1.onrender.com"
 local CHALLENGE_URL = BASE_URL .. "/loader/challenge"
 local VALIDATE_URL  = BASE_URL .. "/loader/validate"
+
+-- ▶︎ UNIFY HTTP REQUEST FUNCTION
+local http_request = (syn and syn.request)
+                  or (http and http.request)
+                  or request
+                  or http_request
+
+if not http_request then
+    error("❌ No supported HTTP request function found; your exploit may not allow HTTP")
+end
+
+-- ▶︎ HELPERS
 local function simpleHMAC(input, key)
     return HttpService:UrlEncode(input .. key)
 end
+
 local function fetch(url, method, body)
-    local hdrs = { ["Content-Type"] = "application/json" }
-    if syn and syn.request then
-        return syn.request({Url=url,Method=method,Headers=hdrs,Body=body}).Body
-    elseif request or http_request then
-        return (request or http_request)({Url=url,Method=method,Headers=hdrs,Body=body}).Body
+    local ok, res = pcall(http_request, {
+        Url     = url,
+        Method  = method,
+        Headers = {["Content-Type"] = "application/json"},
+        Body    = body or ""
+    })
+    if not ok then
+        error("❌ HTTP request failed: "..tostring(res))
     end
-    local ok, res = pcall(function()
-        return HttpService:RequestAsync({Url=url,Method=method,Headers=hdrs,Body=body or ""})
-    end)
-    if not ok or not res.Success then
-        error("❌ Tampering Detected")
-    end
-    return res.Body
+    return (res.Body or res)
 end
+
 local function safeDecode(raw)
     local ok, dec = pcall(HttpService.JSONDecode, HttpService, raw)
     return ok and dec or nil, ok and nil or dec
 end
+
+-- ▶︎ PRECHECK
 if not userKey or type(userKey) ~= "string" or userKey == "" then
     error("❌ No userKey found")
 end
-local hwid   = Analytics:GetClientId()
+
+-- ▶︎ METADATA
+local hwid   = tostring(Analytics:GetClientId())
 local gameId = tostring(game.GameId)
-local challRaw
-do
-    local ok, err = pcall(function()
-        challRaw = fetch(CHALLENGE_URL, "POST", "")
-    end)
-    if not ok then error("❌ Tampering Detected") end
-end
+
+-- ▶︎ CHALLENGE
+local challRaw = fetch(CHALLENGE_URL, "POST", "")
 local chall, err = safeDecode(challRaw)
 if not chall or type(chall.nonce) ~= "string" then
-    error("❌ Tampering Detected")
+    error("❌ Invalid challenge response")
 end
+
+-- ▶︎ SIGN & VALIDATE
 local ts        = tostring(os.time())
 local tokenData = chall.nonce .. ":" .. ts .. ":" .. userKey
 local clientSig = simpleHMAC(tokenData, SECRET_KEY)
@@ -54,30 +67,29 @@ local validateBody = HttpService:JSONEncode({
     nonce     = chall.nonce,
     timestamp = ts,
     sig       = clientSig,
-    auto = auto,
+    auto      = auto,
 })
 
-local validateRaw
-do
-    local ok, err = pcall(function()
-        validateRaw = fetch(VALIDATE_URL, "POST", validateBody)
-    end)
-    if not ok then error("❌ Error fetching validate: " .. tostring(err)) end
-end
-
+local validateRaw = fetch(VALIDATE_URL, "POST", validateBody)
 local resp, respErr = safeDecode(validateRaw)
 if not resp then
-    error("❌ Invalid validate response: " .. tostring(respErr))
+    error("❌ Invalid validate response: "..tostring(respErr))
 end
-if type(resp.code)    ~= "string" then error("❌ No script code returned.")    end
-if type(resp.session) ~= "string" then error("❌ Tampering Detected")      end
+if type(resp.code) ~= "string" then
+    error("❌ No script code returned.")
+end
+if type(resp.session) ~= "string" then
+    error("❌ No session returned.")
+end
+
+-- ▶︎ LAUNCH
 _G._session = {
     token = resp.session,
     key   = userKey,
-    hwid  = hwid
+    hwid  = hwid,
 }
 local fn, loadErr = loadstring(resp.code)
 if not fn then
-    error("❌ loadstring failed: " .. tostring(loadErr))
+    error("❌ loadstring failed: "..tostring(loadErr))
 end
 fn()
