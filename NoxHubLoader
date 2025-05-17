@@ -1,352 +1,913 @@
-local Ya=getfenv()
-local d=function(L,y)
-    local ha,o,bb,ta,ab,R,ia,ua,Ua,Wa,B
-    Ua,ta={[-15364]=21814,[-20538]=21814,[-4623]=-19285,[-9637]=-21472},function(Ka)
-        return Ua[Ka- -31033]
-    end
-    ha=ta(-40670)
-    repeat
-        while true do
-            if ha==82670041-82691513 then
-                ia,o,B,ab=Ya['bit3\50']and Ya['bit3\50']['bxor']or function(za,Q)
-                    local t,db,S,oa,F,ca,fb,J
-                    F,S={[26966]=-30001,[11534]=12302,[-15034]=-10662,[5662]=-23835,[32683]=31110,[30609]=-21904,[-3820]=28595,[-32613]=-10246,[31928]=-21904,[26475]=-30001,[26118]=-6247,[-11428]=-23944,[-1886]=-30001,[5601]=18022,[7311]=-6247,[32271]=-6247,[24323]=20863},function(l)
-                        return F[l-15914]
-                    end
-                    oa=S(40237)
-                    repeat
-                        while true do
-                            if oa==33016687291896/1832021268 then
-                                za,Q,t=(za-fb)/(698496473-698496471),(Q-db)/(-1.5351690189542145e-09*-1302788146),t*(1596197766-1596197764)
-                                oa=S(27448)
-                            elseif oa==809646186+-809620652 then
-                                J=za%(-1644343746- -1644343748)
-                                if not(J>(-2099301924+2099301924)/(1.7226779016835423e+18/2041200889))then
-                                    oa=S(48597)
-                                    break
-                                else
-                                    oa=S(880)
-                                    break
-                                end
-                                oa=S(23225)
-                            elseif oa==-198821331- -198797387 then
-                                oa=S(14028);
-                            elseif oa==-16927379+16903544 then
-                                if not(za<Q)then
-                                    oa=S(4486)
-                                    break
-                                else
-                                    oa=S(-16699)
-                                    break
-                                end
-                                oa=S(42389)
-                            elseif oa==49631642832950/-1654332950 then
-                                oa=S(47842);
-                            elseif oa==-1625224123+1625252718 then
-                                ca=ca+t
-                                oa=S(21515)
-                            elseif oa==16585735416484/1014480116 then
-                                fb,db=za%(1412630853+-1412630851),Q%(-1399645282+1399645284)
-                                if fb~=db then
-                                    oa=S(12094)
-                                    break
-                                end
-                                oa=18016162385848/999676084
-                            elseif oa==-1051463071- -1051475373 then
-                                if za>0*94931757 and Q>-0/-326058119 then
-                                    oa=1227942547-1227926198
-                                else
-                                    oa=S(21576)
-                                end
-                            elseif oa==4248088762818/-414609483 then
-                                za=Q
-                                oa=S(42880)
-                            elseif oa==-5.6209681842089202e-05*389683757 then
-                                if za>-0*-84175323 then
-                                    oa=-48018612340202/-1880575403
-                                else
-                                    oa=3092822322062/110608051
-                                end
-                            elseif oa==6221818216702/222509771 then
-                                return ca
-                            elseif oa==48225632372250/1550164975 then
-                                oa=S(42032);
-                            elseif oa==4127529328233/-660721839 then
-                                za,t=(za-J)/(-1.131627740833791e-09*-1767365652),t*(-10244345+10244347)
-                                oa=S(46523)
-                            elseif oa==3.8198924045268948e-05*546167216 then
-                                t,ca=-711796228+711796229,269991112-269991112
-                                oa=-19229219257094/-1563096997
-                            elseif oa==-1526276544+1526265882 then
-                                ca=ca+t
-                                oa=S(48185)
-                            end
-                        end
-                    until oa==170144449-170164662
-                end,Ya['string']['char'],Ya['string']['byte'],''
-                bb,ua,R=-0*-1812825144,1,#L-6.8796784113589708e-10*1453556315
-                ha=-181200778- -181168048
-            elseif ha==-8077703460827/997370473 then
-                if(ua>=0 and bb>R)or((ua<0 or ua~=ua)and bb<R)then
-                    ha=ta(-46397)
-                else
-                    ha=-1391213730- -1391232813
-                end
-            elseif ha==213683146+-213702431 then
-                bb=bb+ua;
-                Wa=bb;
-                if bb~=bb then
-                    ha=ta(-51571)
-                else
-                    ha=-0.00011692743742238164*69265180
-                end
-            elseif ha==-906909606+906931420 then
-                return ab
-            elseif ha==1.4245332738212903e-05*1339596649 then
-                ab=ab..o(ia(B(L,Wa+(-1766537797+1766537798)),B(y,Wa%#y+390654546/390654546)))
-                ha=ta(-35656)
-            elseif ha==597083701-597116431 then
-                Wa=bb;
-                if R~=R then
-                    ha=-27286959200514/-1250892051
-                else
-                    ha=-613672146+613664047
-                end
-            end
-        end
-    until ha==-1.9058034899190796e-05*-658200075
+local Va,Ua,S,o
+Ua,o={[30573]=-14657,[26596]=-25505},function(O)
+    return Ua[O-14302]
 end
-local g,ya,r,Na=Ya[d('\240\245\250\241','\151\148')][d('D/%o\28q<8_\28','\3JQ<y')](Ya[d('\240\245\250\241','\151\148')],d('\134\224?\22\f\171\230=\15<\171','\206\148Kf_')),Ya[d('\241W\251S','\150\54')][d('4\208\210\129T\1\195\207\177T','s\181\166\210\49')](Ya[d('\241W\251S','\150\54')],d('\141\217\134\161\138\96\249\r\\\182\216\141\179\129s\227\29K\186','\223\187\254\224\228\1\149t(')),d('c\246\130:2wsg\200\20\49\211\131\171\243<>\200\240\129\173@\217(\161\"\199 \172\219\51kd\162\129bi#u3\206\31\48\129\210\246\164:8\207\172\132\250\17\218~\244y\156 \171\140bn',"\6\144\231[\vF@\4\171\'\2\177\179\147\198\15\n\249\149\179\206$\184\31\197\26\164\16\155\189\a\r"),d('\177\150\193\229\t]\155\158\29\177\234\212\230\153V1\192\143\251\183\145\220\251\29J\133\159\0\176\250\221\231\133\30/\135\143\241\180','\217\226\181\149zg\180\177o\222\136\184\137\225{]\169\236\158')
-local xa,E,m=Na..d('J\1#\202\137\245@Y\6\5-\199\129\245\\\17\0','emL\171\237\144\50v'),Na..d('\5\189\0\206\242\245\3\138\\\176\3\198\242\241\5\192','*\209o\175\150\144q\165'),(Ya[d('\184\178\165','\203')]and Ya[d('0:-','C')][d('\r\203\182\n\203\180\v','\127\174\199')])or(Ya[d('\144\186\140\190','\248\206')]and Ya[d('\31\21\3\17','wa')][d('\235/p\236/r\237','\153J\1')])or Ya[d('B\18\175E\18\173D','0w\222')]or Ya[d('\145\244}\157\184\182\156\241|\136\148\176','\249\128\t\237\231\196')]
-if not(not m)then
-    local X,Sa,ka
-    ka,X={[25731]=18650,[28474]=-16429},function(i)
-        return ka[i- -168]
+Va=o(40898)
+repeat
+    while true do
+        if Va==51803351108045/-2031105709 then
+            S=getfenv()
+            Va=o(44875)
+            break
+        end
     end
-    Sa=X(28306)
+until Va==2144645365+-2144660022
+local n,Ea,Qa,x=S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\215\163\221\167','\176\194')][(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)("~\t:\208\139K\26\'\224\139",'9lN\131\238')](S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\215\163\221\167','\176\194')],(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\5\149B\148\159(\147@\141\175(','M\225\54\228\204')),S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\216I\210M','\191(')][(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\203\239\56h\19\254\252%X\19','\140\138L;v')](S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\216I\210M','\191(')],(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\252\151\165\199\161\96\227\202\159\199\150\174\213\170s\249\218\136\203','\174\245\221\134\207\1\143\179\235')),(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('K\171\194\"hx\133\188I\96%*\194^[\144\227\168(\228\210<\233\208\209fADI\129\21\188L\255\193z3,\131\232Ok$x\147\3\f\150\229\175t\225\133m\234\134\132=\26DN\214D\185','.\205\167CQI\182\223*S\22H\242fn\163\215\153M\214\177X\136\231\181^\"t~\231!\218'),(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)("\140\207\150\250\51\163\213\t\a\233\158\253\228\225e\15\134\187:\138\200\139\228\'\180\203\b\26\232\142\244\229\253-\17\193\187\48\137",'\228\187\226\138@\153\250&u\134\252\145\139\153Hc\239\216_')
+local La,l,ja=x..(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)("mfH)+~\197\6!bF$#~\217N\'","B\n\'HO\27\183)"),x..(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\21{\209\247\212!\229\193Lv\210\255\212%\227\139',':\23\190\150\176D\151\238'),(S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)("\'-:",'T')]and S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\146\152\143','\225')][(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('e\176Bb\176@c','\23\213\51')])or(S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\237z\241~','\133\14')]and S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\221J\193N','\181>')][(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\254\241\197\249\241\199\248','\140\148\180')])or S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('e\249\207b\249\205c','\23\156\190')]or S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\145\205~\177j\174\156\200\127\164F\168','\249\185\n\193\53\220')]
+if not(not ja)then
+    local X,qa,q
+    q,qa={[-12955]=9627,[22251]=-13092},function(R)
+        return q[R- -8236]
+    end
+    X=qa(14015)
     repeat
         while true do
-            if Sa==4.5607952507855249e-05*-360222266 then
-                Sa=X(25563);
+            if X==22042482938700/-1683660475 then
+                X=qa(-21191);
                 break;
             end
         end
-    until Sa==-1837813848- -1837832498
+    until X==1.4864152439311481e-05*647665586
 else
-    local D,v,na
-    D,v={[7640]=-12336,[-31328]=-26917},function(P)
-        return D[P-28061]
+    local w,la,ba
+    w,la={[-17000]=-12341,[-21746]=-31370},function(L)
+        return w[L+-17479]
     end
-    na=v(-3267)
+    ba=la(-4267)
     repeat
         while true do
-            if na==-40302381234599/1497283547 then
-                Ya[d('F\204Q\209Q','#\190')](d('\28YnDj\25\151\\\239 \227\152\155Z\fF\145K_\220\223y=\16\180\199\131ld\254<\249F\167^\164\160s\222\162\141\17J\18\140\15\227?\230\133\201K\17R\221lb\252\175\52.\f\229\220\137k0\191\54\224G\179\n\133\155I\174','\254\196\226d$v\183/\154P\147\247\233.i\"\177\3\v\136\143YOu\197\178\230\31\16\222Z\140(\196*\205\207\29'))
-                na=v(35701)
+            if ba==-56538039887460/1802296458 then
+                S[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('{\190l\163l','\30\204')]((function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)("_\158;x}\198\16\163\232\130\254d\16&K]\132\19b\132\170\151\52\217\154\204,\176\214\146V\208\5\20\227]\183;\157e\216-]\205\v\240\228\157\251yB7VI\200\52_\164\218\218\'\197\203\215&\183\130\211\\\201\4\0\183|\140\1\237",'\189\3\183X3\169\48\208\157\242\142\vbR.9\164[6\208\250\183F\188\235\185I\195\162\178\48\165kw\151\52\216U'))
+                ba=la(479)
                 break
             end
         end
-    until na==-1832048765+1832036429
+    until ba==-471845592- -471833251
 end
-local function ja(ba,sa)
-    local ea,f,Qa
-    f,ea={[4347]=2766},function(ma)
-        return f[ma+-4302]
+local function r(Na,b)
+    local Z,Y,z
+    Z,z={[23942]=27440},function(wa)
+        return Z[wa+18750]
     end
-    Qa=ea(8649)
+    Y=z(5192)
     repeat
         while true do
-            if Qa==-1.8735275358824109e-06*-1476359406 then
-                return g[d('Rs\210|ib\209]b','\a\1\190\57')](g,ba..sa)
+            if Y==1828765342+-1828737902 then
+                return n[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\148J\r\238\175[\14\207\164','\193\56a\171')](n,Na..b)
             end
         end
-    until Qa==-133126633- -133110768
+    until Y==33338595023181/1129011989
 end
-local function j(Za,Y,Ea)
-    local jb,Z,hb,va,u
-    Z,hb={[-20546]=-4264,[-1619]=-7241,[11214]=18294},function(Ma)
-        return Z[Ma+-3429]
+local function ta(V,k,sa)
+    local F,d,p,Ta,da
+    d,Ta={[-7619]=-16083,[12627]=-14601,[-22766]=18620,[12470]=-14601,[-23374]=24640},function(na)
+        return d[na- -19765]
     end
-    jb=hb(14643)
+    da=Ta(-43139)
     repeat
         while true do
-            if jb==-818997206- -818989965 then
-                Ya[d('\163x\180e\180','\198\n')](d("\229)0\189\229\190Ws\178\147\137\201r\209\207\233\141\140bJ\254\132\136\130\'",'\a\180\188\157\173\234\3#\146\225\236\184')..Ya[d('Je\a\249Lc\26\234','>\nt\141')](va))
-                jb=hb(-17117)
-            elseif jb==33072085597998/1807810517 then
-                u,va=Ya[d('\233\0\248\15\245','\153c')](m,{[d('\215\240\238','\130')]=Za,[d('9\250m\28\240}','t\159\25')]=Y,[d('\187\213*\151\213\57\128','\243\176K')]={[d('\228\143^pi\218\211\205d}|\209','\167\224\48\4\f\180')]=d('\3\173\156\156\150!\183\135\v\178\130\223\149\49\185\157','b\221\236\240\255B\214\243')},[d('\246$\208\50','\180K')]=Ea or''})
-                if not u then
-                    jb=hb(1810)
+            if da==324162608+-324177209 then
+                return(p[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\150\128\176\150','\212\239')]or p)
+            elseif da==30513504387520/1238372743 then
+                F,p=S[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\194\128\211\143\222','\178\227')](ja,{[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('^yg','\v')]=V,[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\137_\248\172U\232','\196:\140')]=k,[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('P\215?|\215,k','\24\178^')]={[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\210Q\140\185=\230\229\19\182\180(\237','\145>\226\205X\136')]=(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('0]\b\193d\96\23i8B\22\130gp\25s','Q-x\173\r\3v\29')},[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('4\178\18\164','v\221')]=sa or''})
+                if not(not F)then
+                    da=Ta(-42531)
+                    break
+                else
+                    da=Ta(-27384)
                     break
                 end
-                jb=849621486+-849625750
-            elseif jb==-2122121585+2122117321 then
-                return(va[d('\247k\209}','\181\4')]or va)
+                da=22243588697928/-1523429128
+            elseif da==16309015219233/-1014053051 then
+                S[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\16\3\a\30\a','uq')]((function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\216\231\151?\154H\135\130\27\96\48\230O\31hk\242z\178\187Ww1\173\26',':z\27\31\210\28\211\210;\18U\151')..S[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\136\22G\127\142\16Zl','\252y4\v')](p))
+                da=Ta(-7295)
+            elseif da==1828761025+-1828742405 then
+                da=Ta(-7138);
             end
         end
-    until jb==-3767751597464/-463324102
+    until da==1837191481-1837184222
 end
-local function Ca(pa)
-    local z,s,b,W,e
-    e,z={[-8644]=-1378},function(Ja)
-        return e[Ja- -28787]
+local function a(u)
+    local P,Ba,N,Ra,ga
+    P,Ra={[15654]=-7783},function(Da)
+        return P[Da+-28825]
     end
-    s=z(-37431)
+    ga=Ra(44479)
     repeat
         while true do
-            if s==1113149938+-1113151316 then
-                W,b=Ya[d('\229\221\244\210\249','\149\190')](g[d('\242\r+\144R\221=\v\186s','\184^d\222\22')],g,pa)
-                return W and b or nil,W and nil or b
+            if ga==7.2267663119167517e-06*-1076968545 then
+                N,Ba=S[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\231\162\246\173\251','\151\193')](n[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\"[\178p\14\rk\146Z/','h\b\253>J')],n,u)
+                return N and Ba or nil,N and nil or Ba
             end
         end
-    until s==1309000298-1309003974
+    until ga==-654273896+654262523
 end
-if not(not Ya[d(d('\na\180\rY\180\6','q\173\174'),d('\163\18\210','\173'))]or Ya[d(d('s\19w\15','\227z'),d('\249\r','\29'))](Ya[d(d('\146>\190\149\6\190\158','\254u='),d('\150\183i','\143'))])~=d(d('\247\230$\237\252\49','\"\142\238'),d('\250@\228','\\'))or Ya[d(d('|\191^{\135^p','\96\238\5'),d('\190\245\233','\215'))]=='')then
-    local eb,Ta,Ga
-    eb,Ta={[-20275]=-27411,[6930]=-2620},function(H)
-        return eb[H+31589]
+if not(not S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
     end
-    Ga=Ta(-24659)
+    return Oa
+end)((function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('l0\138k\b\138\96','m\243\149'),(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('m\169c','\25'))]or S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)((function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\244\151\240\139','\157\\'),(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\138%','\151'))](S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)((function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('T\6\248S>\248X','\3Q\23'),(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\189\187\21','\159'))])~=(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)((function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('s-\230i7\243','\\\n!'),(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\219\212\50','\135'))or S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)((function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\178\129T\181\185T\190','\200\248\17'),(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\215\210\248','\216'))]=='')then
+    local Pa,Fa,t
+    Fa,Pa={[10599]=3536,[1883]=-15588},function(y)
+        return Fa[y+-5628]
+    end
+    t=Pa(7511)
     repeat
         while true do
-            if Ga==-1.4074895535037489e-06*1861470299 then
-                Ga=Ta(-51864);
+            if t==4.4955392674194029e-05*-346743718 then
+                t=Pa(16227);
                 break;
             end
         end
-    until Ga==-452796691- -452769280
+    until t==-40284531+40288067
 else
-    local Da,p,G
-    Da,p={[-6665]=11749,[-9806]=3128},function(da)
-        return Da[da-22832]
+    local ca,C,A
+    C,A={[2098]=22182,[23846]=-9565},function(B)
+        return C[B+26174]
     end
-    G=p(13026)
+    ca=A(-2328)
     repeat
         while true do
-            if G==-8.3295411242213891e-06*-375530891 then
-                Ya[d('\128\127\151b\151','\229\r')](d('\230\248\197\242\f\220\145\250\223\17v.,\171b\213\222\250\194\16','\4eI\210B\179\177\143\172t'))
-                G=p(16167)
+            if ca==-2109840138- -2109830573 then
+                S[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\158\132\137\153\137','\251\246')]((function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('Zj\209\149\22\25uQ\166_\202\188\56\204x\16:Q\187^','\184\247]\181XvU$\213:'))
+                ca=A(-24076)
                 break
             end
         end
-    until G==-321645133+321656882
+    until ca==28986991630890/1306779895
 end
-local wa,ra,T=Ya[d('s\145E~u\151Xm','\a\254\54\n')](ya[d('\223\252\19}\232\241\252\tJ\205\252','\152\153g>\132')](ya)),Ya[d('\169?<\192\175\57!\211','\221PO\180')](Ya[d('\211\189\217\185','\180\220')][d("K\'zi\15s",'\fF\23')]),j(xa,d('\248\240\251\235','\168\191'),'')
-local _,c=Ca(T)
-if not(not _ or Ya[d(d('\15\185\v\165','\222\133'),d('\17\241','\180'))](_[d(d('1\252\49\240:','\r\153'),d('\192\152','\146'))])~=d(d('\130/-\152\53\56','\158\137\184'),d('I\244\193','&')))then
-    local Aa,aa,I
-    I,Aa={[27261]=-25356,[26317]=-13870},function(_b)
-        return I[_b+-26167]
+local Ka,h,Ma=S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
     end
-    aa=Aa(52484)
+    return Oa
+end)('i\249,\150o\255\49\133','\29\150_\226')](Ea[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)("S\22=\228|}\22\'\211Yp",'\20sI\167\16')](Ea)),S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\175\155\182\150\169\157\171\133','\219\244\197\226')](S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\140k\134o','\235\n')][(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('j\254/H\214&','-\159B')]),ta(La,(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('L\\OG','\28\19'),'')
+local ra,ha=a(Ma)
+if not ra or S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\221\235\217\247','\169\146')](ra[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\159.\159\"\148','\241A')])~=(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\26\216\153\0\194\140','i\172\235')then
+    local E,xa,G
+    xa,E={[-2065]=6706,[-25459]=29736},function(m)
+        return xa[m+5127]
+    end
+    G=E(-30586)
     repeat
         while true do
-            if aa==-1291997290+1291983420 then
-                aa=Aa(53428);
+            if G==4.6571958583639927e-05*638495801 then
+                S[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)("0\v\'\22\'",'Uy')]((function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)(';\145\165\198ASh\179\25p\16M2\14\201\181\96L\136oX>\160\16j\4\2?\21\205','\217\f)\230\b=\30\210u\25tmQf\168'))
+                G=E(-7192)
+                break
+            end
+        end
+    until G==-4328861532548/-645520658
+end
+local ua=S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('j\131\193\183l\133\220\164','\30\236\178\195')](S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('ZF','5')][(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('i\5p\t','\29l')]())
+local ya=ra[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\254X\254T\245','\144\55')]..(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\234','\208')..ua..(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\26',' ')..S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('vo\179qW\179z','\3\28\214')]
+local pa=r(ya,Qa)
+local Ja=n[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\31\24u\152\151;(U\178\183','UK:\214\210')](n,{[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\228\234\246','\143')]=S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\145\a\147\150?\147\157','\228t\246')],[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\130l\131\127','\234\27')]=Ka,[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\255\31@\253\55I','\152~-')]=h,[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('1\129\49\141:','_\238')]=ra[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\172\54\172:\167','\194Y')],[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('L\131e\23K\158i\31H','8\234\br')]=ua,[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)(']GI','.')]=pa,[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\233\129\252\155','\136\244')]=S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\215\52\194.','\182A')],[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('6>\27)>\a4','@_i')]=S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('6)\202))\214\52','@H\184')]})
+local Ga=ta(l,(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\245\28\246\a','\165S'),Ja)
+local e,T=a(Ga)
+if not(not e)then
+    local va,s,Ca
+    Ca,va={[20770]=30378,[-31505]=22835},function(_)
+        return Ca[_+1256]
+    end
+    s=va(-32761)
+    repeat
+        while true do
+            if s==-1.3521742092007952e-05*-1688761688 then
+                s=va(19514);
                 break;
             end
         end
-    until aa==1605902475-1605927831
+    until s==1467493521+-1467463143
 else
-    local w,Xa,cb
-    Xa,cb={[-22536]=21794,[21771]=-6556},function(n)
-        return Xa[n+26228]
+    local M,f,K
+    K,f={[-14431]=2311,[5665]=-12065},function(fa)
+        return K[fa-27279]
     end
-    w=cb(-4457)
+    M=f(32944)
     repeat
         while true do
-            if w==-1591534130- -1591527574 then
-                Ya[d('S\238D\243D','6\156')](d("#+\240y,\218Fo\133\'\180\a8_.\173\218\25\55\2\209\16|\140=\160H5D*","\193\182|Ye\180\48\14\233N\208\'[7O"))
-                w=cb(-48764)
+            if M==-19400475395695/1607996303 then
+                S[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('i\"~?~','\fP')]((function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)("\244\128\238\'h\168\3\243\221\127\23W\223\148E\127y\3sD\230\a\247\194f\28\25\218\144\19\54",'\22\29b\a!\198u\146\177\22sw\169\245)')..S[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('X\248|\148^\254a\135',',\151\15\224')](T))
+                M=f(12848)
                 break
             end
         end
-    until w==-1405011879+1405033673
+    until M==-9.0227543401029596e-06*-256130214
 end
-local M=Ya[d(';\172\a\18=\170\26\1','O\195tf')](Ya[d('\171\183','\196')][d('\222\173\199\161','\170\196')]())
-local Ha=_[d('\177\212\177\216\186','\223\187')]..d('\5','?')..M..d('\244','\206')..Ya[d('\224+3\231\19\51\236','\149XV')]
-local Fa=ja(Ha,r)
-local la=g[d('\31\246K\96%;\198kJ\5','U\165\4.\96')](g,{[d('ig{','\2')]=Ya[d('\231Y\205\224a\205\235','\146*\168')],[d('BaCr','*\22')]=wa,[d('\132\173\26\134\133\19','\227\204w')]=ra,[d('X\204X\192S','6\163')]=_[d('\136:\136\54\131','\230U')],[d('\163\156\133\136\164\129\137\128\167','\215\245\232\237')]=M,[d(': .','I')]=Fa,[d('\5\187\16\161','d\206')]=Ya[d('1M$W','P8')]})
-local q=j(E,d('\199\196\196\223','\151\139'),la)
-local U,Ra=Ca(q)
-if not U then
-    local fa,ga,V
-    ga,fa={[17884]=-2336,[-31475]=-18198},function(ib)
-        return ga[ib- -12208]
+if S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
     end
-    V=fa(-43683)
+    return Oa
+end)('\191A\187]','\203\56')](e[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\205d\202n','\174\v')])~=(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\b\16\0\18\n\21','{dr')then
+    local D,ka,ea
+    ka,ea={[-20091]=12947,[-1202]=-32537},function(U)
+        return ka[U-17365]
+    end
+    D=ea(16163)
     repeat
         while true do
-            if V==3.1123822694330907e-05*-584696815 then
-                Ya[d('Z\174M\179M','?\220')](d('\128b\26e\251\241\145\168V\132l\158\210r\168\v\155\247\49\215\191\149\172I\157g\208\215v\254B','b\255\150E\178\159\231\201:\237\b\190\164\19\196')..Ya[d('\96\199A\137f\193\\\154','\20\168\50\253')](Ra))
-                V=fa(5676)
+            if D==10309610014943/-316858039 then
+                S[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('-\30:\3:','Hl')]((function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\"\217j\182a\172\153\17\179\226.\184\132\221\163+\130\243\15\177\220\22\165\226)\173\148\211','\192D\230\150/\195\185b\208\144G\200\240\253'))
+                D=ea(-2726)
                 break
             end
         end
-    until V==-1533055237- -1533052901
+    until D==-16287904+16300851
 end
-if Ya[d('\221\190\217\162','\169\199')](U[d('\185\199\190\205','\218\168')])~=d('\29\144\192\a\138\213','n\228\178')then
-    local qa,A,gb
-    gb,qa={[-17846]=25733,[-720]=-20552},function(C)
-        return gb[C- -3446]
+if S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
     end
-    A=qa(-4166)
+    return Oa
+end)('\152\178\156\174','\236\203')](e[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('Jg\bJk\20W','9\2{')])~=(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\162\186\217\184\160\204','\209\206\171')then
+    local aa,_a,v
+    _a,aa={[-5044]=-12903,[-25659]=29351},function(Q)
+        return _a[Q- -30173]
+    end
+    v=aa(-55832)
     repeat
         while true do
-            if A==39960070377584/-1944339742 then
-                Ya[d('\156\209\139\204\139','\249\163')](d('\207\137\193\214\173\26\49|\21\229>\183\232(N{)\147\195\at{\3\229\57\162\248&','-\20M\246\227u\17\15v\151W\199\156\b'))
-                A=qa(-21292)
+            if v==1272294841+-1272265490 then
+                S[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\245\235\226\246\226','\144\153')]((function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('L\243\178p\210)\236.\250g\201]\193\0\30\"\249\50\185/\241q\222\26','\174n>P\156F\204]\159\20\186\52'))
+                v=aa(-35217)
                 break
             end
         end
-    until A==2.5917046615072014e-05*992898627
+    until v==-1756524610+1756511707
 end
-if Ya[d('=\226\57\254','I\155')](U[d('\212\fi\212\0u\201','\167i\26')])~=d('3\135y)\157l','@\243\v')then
-    local Va,N,Oa
-    Oa,N={[5319]=12540,[-25620]=-21517},function(Ia)
-        return Oa[Ia- -15182]
+S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
     end
-    Va=N(-40802)
+    return Oa
+end)('\156\132','\195')][(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\207\133\229\197\227\159\239\216','\144\246\128\182')]={[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\213\212\202\222\207','\161\187')]=e[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('A\229\128A\233\156\\','2\128\243')],[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\206\192\220','\165')]=S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\223\246/\216\206/\211','\170\133J')],[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('Y\178X\161','1\197')]=Ka}
+local I,Aa=S[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\30\177\171\16\4\6\172\163\26\16','r\222\202tw')](e[(function(ia,g)
+    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+    for J=0,#ia-1 do
+        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+    end
+    return Oa
+end)('\26\162\29\168','y\205')])
+if not(not I)then
+    local Sa,c,za
+    Sa,za={[-23276]=26301,[31597]=-30469},function(oa)
+        return Sa[oa-31855]
+    end
+    c=za(63452)
     repeat
         while true do
-            if Va==-1.242397869808182e-05*1731892860 then
-                Ya[d('\224\182\247\171\247','\133\196')](d('2\160-\165:t\96U\241\143\238m\191S\129\247\17o5T\250\153\249*','\208=\161\133t\27@&\148\252\157\4'))
-                Va=N(-9863)
-                break
-            end
-        end
-    until Va==1014143641-1014131101
-end
-Ya[d('\245\237','\170')][d('\247\208\140[\219\202\134F','\168\163\233(')]={[d('\n[\21Q\16','~4')]=U[d('Q\197\"Q\201>L','\"\160Q')],[d('\216\214\202','\179')]=Ya[d(" \22O\'.O,",'Ue*')],[d('w\18v\1','\31e')]=wa}
-local O,_a=Ya[d('\163Uv\224@\187H~\234T','\207:\23\132\51')](U[d('}\201z\195','\30\166')])
-if not(not O)then
-    local La,h,K
-    h,K={[-29765]=-13006,[23166]=-6376},function(Ba)
-        return h[Ba+-14546]
-    end
-    La=K(37712)
-    repeat
-        while true do
-            if La==634228178-634234554 then
-                La=K(-15219);
+            if c==-62645154060428/2056029212 then
+                c=za(8579);
                 break;
             end
         end
-    until La==-1280887332+1280874326
+    until c==7.7471081623459135e-05*339494421
 else
-    local k,a,Pa
-    Pa,k={[23596]=-8660,[-28898]=2082},function(x)
-        return Pa[x-3182]
+    local W,H,Ia
+    W,H={[-4662]=-30587,[-14406]=2901},function(i)
+        return W[i-27443]
     end
-    a=k(-25716)
+    Ia=H(13037)
     repeat
         while true do
-            if a==1.1118165248159042e-06*1872611131 then
-                Ya[d('\167L\176Q\176','\194>')](d('\206\252\172z\16\206\196\26\193\187\49E\15Gz\26\192\204\18\215\171y\f',',a Z|\161\165~\178\207C')..Ya[d('\"\174\213\163$\168\200\176','V\193\166\215')](_a))
-                a=k(26778)
+            if Ia==-1249172107+1249175008 then
+                S[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\14\211\25\206\25','k\161')]((function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('\186\181\199\184\229\223T>\181\161!1F,\184\239\209\\6\163\177ix','X(K\152\137\176\53Z\198\213S')..S[(function(ia,g)
+                    local j,Ha,ma,Oa=string.char,string.byte,bit32 .bxor,''
+                    for J=0,#ia-1 do
+                        Oa=Oa..j(ma(Ha(ia,J+1),Ha(g,J%#g+1)))
+                    end
+                    return Oa
+                end)('$\vx3\"\re ','Pd\vG')](Aa))
+                Ia=H(22781)
                 break
             end
         end
-    until a==-1107060180+1107051520
+    until Ia==-278240785+278210198
 end;
-O()
+I()
