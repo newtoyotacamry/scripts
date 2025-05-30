@@ -1,1032 +1,984 @@
-local Aa,Y,q,ha,P,N,z
-ha,N={[-12893]=-15689,[-30918]=1707},function(W)
-    return ha[W- -32075]
+local O,Z,N,n,Aa,va,_a
+_a,N={[-7510]=23084,[-6967]=-5715},function(r)
+    return _a[r- -5482]
 end
-Y=N(-62993)
+O=N(-12449)
 repeat
     while true do
-        if Y==-607830449649/-356081107 then
-            P,q,z,Aa=getfenv(),(string.char),(string.byte),(bit32 .bxor)
-            Y=N(-44968)
+        if O==1617488885+-1617494600 then
+            Z,Aa,n,va=getfenv(),(string.char),(string.byte),(bit32 .bxor)
+            O=N(-12992)
             break
         end
     end
-until Y==-1170056240+1170040551
-local la,g,za=P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+until O==1.893609848846277e-05*1219047314
+local wa,da,d=Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\148\28\158\24','\243}')][(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)(';3\49\55','\\R')][(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('7\v\219DW\2\24\198tW','pn\175\23\50')](P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('$\31\252\175\235\17\f\225\159\235','cz\136\252\142')](Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\148\28\158\24','\243}')],(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)(';3\49\55','\\R')],(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('m\160\56\195s@\166:\218C@','%\212L\179 ')),P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\t\142D\3\199$\136F\26\247$','A\250\48s\148')),Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\16\132\26\128','w\229')][(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('5\154?\158','R\251')][(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\188\153\198\96N\137\138\219PN','\251\252\178\51+')](P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\173\208T\211f\152\195I\227f','\234\181 \128\3')](Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\16\132\26\128','w\229')],(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('5\154?\158','R\251')],(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\142\171\3\198\178<\159\133?\181\170\b\212\185/\133\149(\185','\220\201{\135\220]\243\252K')),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\187\132[\205\241ce\129D\128\133P\223\250p\127\145S\140','\233\230#\140\159\2\t\248\48')),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\232.\129\n}w\194\234\147L\222\145\14Vh\165\225>\144\b ;\136\183\158F\202\215\26Dt\229','\128Z\245z\14M\237\197\253#\166\249{4\4\202')
-local X,w,J,ra=za..(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\150\236\239\17L\96\246!\177\a\155Ey\166\184\57\159\252\254\19\17\53\183|\186\6\135H~\234\183\57\147','\254\152\155a?Z\217\14\223h\227-\f\196\212V')
+local T,y,W,fa=d..(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('!~\22\51}\129\234\23mz\24>u\129\246_k','\14\18yR\25\228\152\56'),za..(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\254\5\19\148\163m\197\129\178\1\29\153\171m\217\201\180','\209i|\245\199\b\183\174'),d..(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\128\24B\190x\198\148\232\217\21A\182x\194\146\162','\175t-\223\28\163\230\199'),za..(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('_z; \14I\246I\6w8(\14M\240\3','p\22TAj,\132f'),d..(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('#\160\245\230?\146\16)m\176\226\253 \131\16c','\f\211\150\148V\226d\6'),(P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\162D\206.\153\252\235\183\236T\217\53\134\237\235\253','\141\55\173\\\240\140\159\152'),(Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('0:-','C')]and P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('BH_','1')]and Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)("-\'0",'^')][(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\138\128\151','\249')][(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\170\190\148\173\190\150\172','\216\219\229')])or(P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\212\176\204\211\176\206\210','\166\213\189')])or(Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('9\133%\129','Q\241')]and P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('rEnA','\26\49')]and Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\164\252\184\248','\204\136')][(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\151R\139V','\255&')][(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('0Y\128\55Y\130\54','B<\241')])or P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\2>\216\5>\218\4','p[\169')])or Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('8\27\236?\27\238>','J~\157')]or P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('w\"Fp\"Dq','\5G7')]or Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\132\204\16\160\255d\137\201\17\181\211b','\236\184d\208\160\22')]
-if not(not ra)then
-    local ca,i,K
-    K,i={[-497]=-22553,[-19126]=4488},function(j)
-        return K[j+-1130]
+    return ja
+end)('\253x\198PD\169\240}\199Eh\175','\149\f\178 \27\219')]
+if not(not fa)then
+    local Ba,ea,ta
+    ea,Ba={[-18912]=25536,[-18044]=-28202},function(Ca)
+        return ea[Ca-5913]
     end
-    ca=i(-17996)
+    ta=Ba(-12131)
     repeat
         while true do
-            if ca==4655648539872/1037354844 then
-                ca=i(633);
+            if ta==2019403232+-2019431434 then
+                ta=Ba(-12999);
                 break;
             end
         end
-    until ca==1083489947+-1083512500
+    until ta==-1557346736+1557372272
 else
-    local A,fa,r
-    A,fa={[-543]=17251,[-7143]=12916},function(y)
-        return A[y+9521]
+    local ya,x,za
+    za,ya={[16521]=-12933,[18023]=-27044},function(C)
+        return za[C+-28131]
     end
-    r=fa(-16664)
+    x=ya(46154)
     repeat
         while true do
-            if r==-3.8797948711959471e-05*-332904198 then
-                P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+            if x==-1495799731+1495772687 then
+                Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\175\227\184\254\184','\202\145')]((function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)("Y\'N:N",'<U')]((function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\1\136\195?\200\190\151/\2\156aq\147z=k\160\152\166\14W\134fd\135','\227\21O\31\128\234\195\127\"\239\20\1'))
-                r=fa(-10064)
+                    return ja
+                end)('^\t\245\205\26\240X\208\223w{\139\204\251\v\153r\214i\241\138m|\158\216','\188\148y\237R\164\f\128\255\4\14\251'))
+                x=ya(44652)
                 break
             end
         end
-    until r==-18409134723603/-1067134353
+    until x==4853245766589/-375260633
 end
-local function ea(sa,e,R)
-    local wa,p,n,H,U
-    wa,p={[27902]=-24356,[-16479]=-24356,[27849]=22566,[-19990]=-24356,[7048]=30957,[12974]=16446},function(T)
-        return wa[T-26496]
+local function X(j,K,V)
+    local E,o,na,G,L
+    na,L={[11122]=-12399,[29596]=-30921,[22228]=-12399,[29686]=-12399,[-21]=-16966,[1635]=281},function(sa)
+        return na[sa- -32566]
     end
-    n=p(39470)
+    G=L(-30931)
     repeat
         while true do
-            if n==-0.00024015505521017409*101417811 then
-                return(U[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+            if G==2076794469-2076806868 then
+                return(E[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\232Y\206O','\170\54')]or U)
-            elseif n==-1529213309+1529229755 then
-                H,U=P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\177\230\151\240','\243\137')]or E)
+            elseif G==-43055498497473/1392435513 then
+                G=L(-10338);
+            elseif G==1560715475-1560715194 then
+                o,E=Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('YpH\127E',')\19')](ra,{[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('P\218A\213L',' \185')](fa,{[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\25> ','L')]=sa,[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\255\216\198','\170')]=j,[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\224RJ\197XZ','\173\55>')]=e,[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\127pqZza','2\21\5')]=K,[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\217\139%\245\139\54\226','\145\238D')]={[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\20\211\247\56\211\228/','\\\182\150')]={[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('Z\152\a(\210sm\218=%\199x','\25\247i\\\183\29')]=(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\150\248\56x\18j\161\186\2u\aa','\213\151V\fw\4')]=(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\253\f\252\250(2t\205\245\19\226\185+\"z\215','\156|\140\150AQ\21\185')},[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('u\19\0\48\144~r\175}\f\30s\147n|\181','\20cp\\\249\29\19\219')},[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\30<8*','\\S')]=R or''})
-                if not(not H)then
-                    n=p(33544)
+                    return ja
+                end)('\170\210\140\196','\232\189')]=V or''})
+                if not(not o)then
+                    G=L(-2970)
                     break
                 else
-                    n=p(54345)
+                    G=L(-32587)
                     break
                 end
-                n=p(10017)
-            elseif n==-1285823813- -1285846379 then
-                P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                G=L(-21444)
+            elseif G==7853654-7870620 then
+                Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('y\129n\156n','\28\243')]((function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\14\129\25\156\25','k\243')]((function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)("\230b\216\249\149\168\27fB\31\224\22q\154\'\173\253\154._\14\b\225]$",'\4\255T\217\221\252O6bm\133g')..P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\228i\148t\t?\162\56\175\239MGs\145k a\r\151\1\227\248L\f&','\6\244\24TAk\246h\143\157(6')..Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\171\254\157\135\173\248\128\148','\223\145\238\243')](U))
-                n=p(6506)
-            elseif n==2026949398+-2026918441 then
-                n=p(54398);
+                    return ja
+                end)('\184\254\152y\190\248\133j','\204\145\235\r')](E))
+                G=L(-2880)
             end
         end
-    until n==-50203557754757/-1700604917
+    until G==16189160142022/-1115109529
 end
-local function _(Z)
-    local k,qa,va
-    va,k={[23260]=18272,[-8397]=-25006,[-1663]=8704,[-8282]=22993,[18398]=18024,[6724]=22993,[-20183]=-25006,[174]=-26112,[-17961]=-7545},function(B)
-        return va[B-10061]
+local function Y(s)
+    local k,a,R
+    a,k={[26679]=27812,[-23593]=-2831,[7320]=27812,[-19780]=21004,[-9111]=19955,[5831]=4320,[30977]=12496},function(ga)
+        return a[ga+-17271]
     end
-    qa=k(-7900)
+    R=k(48248)
     repeat
         while true do
-            if qa==1053133164-1053110171 then
+            if R==-1.611815546463791e-06*1756404451 then
+                Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
+                    end
+                    return ja
+                end)('Y\147\\\156','.\242')]((function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
+                    end
+                    return ja
+                end)('\183_\195\227','U\195')..s)
+                R=k(8160)
+            elseif R==9.3578485536819715e-06*2132434596 then
+                R=k(24591);
+            elseif R==927685923-927664919 then
+                R=k(23102);
+                break;
+            elseif R==-0.0003094043471112687*-40387280 then
+                if s then
+                    R=k(-6322)
+                    break
+                end
+                R=-2035083770- -2035103725
+            elseif R==1209661004+-1209633192 then
                 if true then
-                    qa=k(10235)
+                    R=297589222546/-267857086
                 else
-                    qa=k(8398)
+                    R=k(-2509)
                 end
-            elseif qa==-1.5898293260934738e-05*1572873238 then
-                qa=k(1779);
-            elseif qa==5565278684505/-737611489 then
-                if Z then
-                    qa=k(28459)
-                    break
-                end
-                qa=k(-10122)
-            elseif qa==1767907598+-1767898894 then
-                qa=k(33321);
-                break;
-            elseif qa==3.3942359395621717e-05*531017888 then
-                P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+            elseif R==7.7675988836155188e-07*-1430300427 then
+                Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\180=\177\50','\195\\')]((function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\229l\226f','\145\r')][(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('(\167\\\27','\202;')..Z)
-                qa=k(1664)
-            elseif qa==1099732414+-1099758526 then
-                P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
-                    end
-                    return ba
-                end)('\231\135\224\141','\147\230')][(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
-                    end
-                    return ba
-                end)('\r\197\19\208','z\164')](1.3006018276137519*768874823)
-                qa=k(16785)
+                    return ja
+                end)('\210\14\204\27','\165o')](1723664726+-723664726)
+                R=k(43950)
             end
         end
-    until qa==1683473617408/92134064
+    until R==2067018029+-2067013709
 end
-if not(P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+if Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('^LZP','*5')](Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\3E\aY','\153\28'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\\2\130[\n\130P',')A\231')])~=(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\178|','\\'))](P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\2:\208\24 \197','qN\162')or Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('T\215qS\239qX','!\164\20')]==''then
+    local u,f,la
+    f,u={[-24063]=20450,[4091]=11967},function(ia)
+        return f[ia+20956]
     end
-    return ba
-end)('\131\144E\132\168E\143','@_\2'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
-    end
-    return ba
-end)('\173\167\57','\27'))])~=(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
-    end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
-    end
-    return ba
-end)('\164\182\217\190\172\204','\192\231\212'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
-    end
-    return ba
-end)('\208\226\184','\199'))or P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
-    end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
-    end
-    return ba
-end)('\209<\161\214\4\161\221','(<\163'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
-    end
-    return ba
-end)('\127\128\148','\243'))]=='')then
-    local O,o,Da
-    o,Da={[22297]=-23181,[12251]=-28052},function(ia)
-        return o[ia+2282]
-    end
-    O=Da(9969)
+    la=u(-16865)
     repeat
         while true do
-            if O==1.3628713151266613e-05*-2058301447 then
-                O=Da(20015);
-                break;
-            end
-        end
-    until O==1403373761-1403396942
-else
-    local _a,S,h
-    h,_a={[-31699]=31430,[21368]=19776},function(ja)
-        return h[ja+-23521]
-    end
-    S=_a(44889)
-    repeat
-        while true do
-            if S==-383152126+383171902 then
-                P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+            if la==-7.9523130639228768e-06*-1504845182 then
+                Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\160\22\183\v\183','\197d')]((function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('1u&h&','T\a')]((function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('ly\139\185e}T\180\51\219\252\175b\224\vt\27\180.\218','\142\228\a\153+\18t\193@\190'))
-                S=_a(-8178)
+                    return ja
+                end)('}\96^\207\253\156\228S\15\23\237\182\183\150\147\149\171S\18\22','\159\253\210\239\179\243\196&|r'))
+                la=u(-45019)
                 break
             end
         end
-    until S==-40737114365710/-1296121997
+    until la==-1.343880758796924e-05*-1521712389
 end
-local pa,ka,Ca=P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+local U,_,oa=Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('<0\195\239:6\222\252','H_\176\155')](g[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('7[\131}1]\158n','C4\240\t')](da[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\255\6\141E\202\209\6\151r\239\220','\184c\249\6\166')](g)),P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('.w\206\204j\0w\212\251O\r','i\18\186\143\6')](da)),Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)(':-S\210<+N\193','NB \166')](P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\189\29hi\187\27uz','\201r\27\29')](Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('k\233a\237','\f\136')][(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\132\27\142\31','\227z')][(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\233\204\234\203\228\227','\174\173\135')]),ea(X,(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)("\227\15\247\193\'\254",'\164n\154')]),X(T,(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\200\199\203\220','\152\136'))
-local C=la[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\162A\161Z','\242\14'))
+local M=wa[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\202\135\137\169A\229\183\169\131\96','\128\212\198\231\5')](la,Ca)
-if not(P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('>\24\164\20M\17(\132>l','tK\235Z\t')](wa,oa)
+if not(Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)((function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\137Q\141M','\t\184'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\201\185\205\165','\218\220'),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\243\151','\a'))](C)~=(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\182\205','\209'))](M)~=(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)((function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('&\151\48\154\55','\141\221'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\157}\139p\140','\162\15'),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\17\229','\206'))or P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)(']\5','\22'))or Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)((function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('U}Qa','\138z'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\131\220\135\192','\157\222'),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\24\205','\179'))](C[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('J[',' '))](M[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)((function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\150\159\150\147\157','\212)'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\248\159\248\147\243','\156\205'),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\200=','\228'))])~=(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\168\159','\162'))])~=(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)((function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('u\130\vo\152\30','\136AP'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\20W\202\14M\223','1Gl'),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('e\\\194','\235')))then
-    local l,s,t
-    s,t={[-3763]=29170,[7278]=-24240},function(da)
-        return s[da-8732]
+    return ja
+end)("\'\21\165",'q')))then
+    local aa,b,qa
+    b,qa={[30308]=16858,[12758]=-15749},function(h)
+        return b[h- -189]
     end
-    l=t(16010)
+    aa=qa(12569)
     repeat
         while true do
-            if l==2.1257143130148318e-05*-1140322566 then
-                l=t(4969);
+            if aa==1285661590+-1285677339 then
+                aa=qa(30119);
                 break;
             end
         end
-    until l==1107044507+-1107015337
+    until aa==-1728193151- -1728210009
 else
-    local c,Q,ma
-    ma,c={[-1241]=-26760,[22654]=30471},function(m)
-        return ma[m- -26381]
+    local ca,B,c
+    ca,B={[161]=-26786,[-31923]=6082},function(P)
+        return ca[P+2239]
     end
-    Q=c(-3727)
+    c=B(-34162)
     repeat
         while true do
-            if Q==13753165287897/451352607 then
-                P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+            if c==-4.2242973130071314e-06*-1439766084 then
+                Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\182\206\161\211\161','\211\188')]((function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\214\16\193\r\193','\179b')]((function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)("\'y\231E\214u\28\189\139r\161\196\b\r\254w\6\185\137|\160",'\197\228ke\159\27j\220\231\27'))
-                Q=c(-27622)
+                    return ja
+                end)('Wj\a\f\190{5F]\"\209\215\232D\150y/B_,\208',"\181\247\139,\247\21C\'1K"))
+                c=B(-2078)
                 break
             end
         end
-    until Q==-411479332- -411452572
+    until c==1906940345-1906967131
 end
-local G={[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+local F={[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('1?#','Z')]=P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\249\247\235','\146')]=Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)("+\230\27,\222\27\'",'^\149~')],[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('{jn|Rnw','\14\25\v')],[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('+\212*\199','C\163')]=pa,[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\18\214\19\197','z\161')]=U,[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\203\235\147\201\195\154','\172\138\254')]=ka,[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\153\135\20\155\175\29','\254\230y')]=_,[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\140\n\140\6\135','\226e')]=C[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('D\183D\187O','*\216')]=M[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\21~\21r\30','{\17')],[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)(",\249,\245\'",'B\150')],[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\139\208b\131\140\205n\139\143','\255\185\15\230')]=P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('ns\244\230in\248\238j','\26\26\153\131')]=Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\230*\247\132\224,\234\151','\146E\132\240')](P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('[8y\155]>d\136','/W\n\239')](Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('dx','\v')][(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('SO','<')][(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\t\24\16\20','}q')]()),[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\201\210\208\222','\189\187')]()),[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\182m\233\169m\245\180','\192\f\155')]=P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\230\253\127\249\253c\228','\144\156\r')]=Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\139\19\30\148\19\2\137','\253rl')],[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('a\20\30~\20\2c','\23ul')],[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\162\127\183e','\195\n')]=P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\164H\177R','\197=')]=Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\144\185\133\163','\241\204')]}
-local xa=ea(w,(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\216\n\205\16','\185\127')]}
+local H=X(y,(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\188M\191V','\236\2'),la[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\217\224\218\251','\137\175'),wa[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('o\156\223\20nK\172\255>N','%\207\144Z+')](la,G))
-local M=la[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)(')\29\207\250f\r-\239\208F','cN\128\180#')](wa,F))
+local Da=wa[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('iaZ\139\189FQz\161\156','#2\21\197\249')](la,xa)
-if not(P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('(_\226\179\162\ao\194\153\131','b\f\173\253\230')](wa,H)
+if not(Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)((function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('k\19o\15','\134%'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\206~\202b','\207\155'),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\193\23','X'))](M)~=(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('V\191','#'))](Da)~=(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)((function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)(';\n-\a*','\137g'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('Z\0L\rK','\207\187'),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\128J','F'))or P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('Un','\180'))or Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)((function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\217\21\221\t','\133\230'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\23\252\19\224','\231\200'),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\213w','\253'))](M[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\221\20','Y'))](Da[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)((function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\245h\242b','.!'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\155\183\156\189','z\212'),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('L\210','\244'))])~=(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\161/','#'))])~=(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)((function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\131\3\54\153\25#',':5\161'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\208\227\21\202\249\0','\224J('),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\r\133\"','\199'))or P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('H\214D','\v'))or Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)((function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('ogk{',':\127'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\167\223\163\195','@7'),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\29]','<'))](M[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('2\48','\161'))](Da[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)((function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\30\131P\30\143L\3','\149\241\149'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\21\166\128\21\170\156\b','\181\17;'),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('{\148\53','\131'))])~=(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\218\219\193','\t'))])~=(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)((function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)((function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\150i\0\140s\21','\212E\160'),(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\156\153\244\134\131\225','@\132F'),(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\202\163)','\251')))then
-    local ya,V,v
-    ya,v={[30680]=2868,[-31132]=21441},function(ta)
-        return ya[ta+-32079]
+    return ja
+end)('\14\200a','\161')))then
+    local g,ma,p
+    g,p={[-11065]=17726,[-16887]=12534},function(l)
+        return g[l+1672]
     end
-    V=v(947)
+    ma=p(-18559)
     repeat
         while true do
-            if V==-1193953947+1193975388 then
-                V=v(62759);
+            if ma==-964420207+964432741 then
+                ma=p(-12737);
                 break;
             end
         end
-    until V==-1.3178875261022031e-05*-217620999
+    until ma==0.00013469174586550441*131604204
 else
-    local Ba,I,aa
-    I,Ba={[-29656]=22509,[30739]=1034},function(u)
-        return I[u-23590]
+    local v,J,z
+    J,v={[-9677]=10251,[-32714]=-14997},function(w)
+        return J[w+-21604]
     end
-    aa=Ba(54329)
+    z=v(-11110)
     repeat
         while true do
-            if aa==-1639817681- -1639818715 then
-                P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+            if z==-1781682229- -1781667232 then
+                Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('E*R7R',' X')]((function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\224q\247l\247','\133\3')]((function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\149\132\255\228~\217\54\139\242\235\145b/K\27p\23\165C\210\96\152\251\241\133-7Y\18','w\25s\196\55\183@\234\158\130\245BY*'))
-                aa=Ba(-6066)
+                    return ja
+                end)(')h1\161\3\220g\23\227\48\189\176\148\138\167\156\217\224>\215\49\4\234*\169\255\140\152\174','\203\245\189\129J\178\17v\143Y\217\144\226\235'))
+                z=v(11927)
                 break
             end
         end
-    until aa==-1913965383+1913987892
+    until z==-6496530122988/-633745988
 end
 do
-    local na,F,f
-    f,na={[-4208]=1899,[4257]=14622},function(a)
-        return f[a+26434]
+    local A,S,m
+    S,A={[-8768]=32266,[-16991]=30593},function(pa)
+        return S[pa+21262]
     end
-    F=na(-22177)
+    m=A(-38253)
     repeat
         while true do
-            if F==-22831795784682/-1561468731 then
-                P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+            if m==1792655953+-1792625360 then
+                Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\213\205','\138')][(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\30\6','A')][(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('pX\216\165\\B\210\184','/+\189\214')]={[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\190w\205\151\146m\199\138','\225\4\168\228')]={[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('u2j8o','\1]')]=M[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\234h\245b\240','\158\a')]=Da[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\2\183>\2\187\"\31','q\210M')],[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\177\f\231\177\0\251\172','\194i\148')],[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\179\189\161','\216')]=P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\181\187\167','\222')]=Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('(\177|/\137|$',']\194\25')],[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\25\161\162\30\153\162\21','l\210\199')],[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\155\22\154\5','\243a')]=pa}
-                M[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('d\\eO','\f+')]=U}
+                Da[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\229\"\f\229.\16\248','\150G\127')],P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\164\241\208\164\253\204\185','\215\148\163')],Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\153-H\158\21H\149','\236^-')],pa=nil,nil,nil
-                F=na(-30642)
+                    return ja
+                end)('\148\143R\147\183R\152','\225\252\55')],U=nil,nil,nil
+                m=A(-30030)
                 break
             end
         end
-    until F==-1.6721613221430702e-06*-1135655977
+    until m==-54212362090198/-1680169903
 end
-local ua,oa=P[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+local I,ka=Z[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('\206\133\190^\4\214\152\182T\16','\162\234\223:w')](M[(function(L,x)
-    local ba=''
-    for b=0,#L-1 do
-        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+    return ja
+end)('\244\234V\249z\236\247^\243n','\152\133\55\157\t')](Da[(function(ba,i)
+    local ja=''
+    for ra=0,#ba-1 do
+        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
     end
-    return ba
-end)('R\237U\231','1\130')])
-if not ua then
-    local D,ga,d
-    D,ga={[2410]=-12439,[-16856]=-19773},function(E)
-        return D[E-30995]
+    return ja
+end)('w\249p\243','\20\150')])
+if not(not I)then
+    local xa,t,Q
+    xa,t={[-27401]=26900,[9082]=-27940},function(ua)
+        return xa[ua-20558]
     end
-    d=ga(14139)
+    Q=t(29640)
     repeat
         while true do
-            if d==1852374068+-1852393841 then
-                P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+            if Q==17693732529660/-633276039 then
+                Q=t(-6843);
+                break;
+            end
+        end
+    until Q==-29277832440200/-1088395258
+else
+    local e,q,D
+    e,q={[8339]=-11484,[20527]=23684},function(ha)
+        return e[ha-1673]
+    end
+    D=q(22200)
+    repeat
+        while true do
+            if D==-2.5616818546779972e-05*-924548845 then
+                Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\203\135\220\154\220','\174\245')]((function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('\189!\170<\170','\216S')]((function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\145Zd6\241}\2\133\20\a*\26\169\143\54\251s\n\141\2\23bS','s\199\232\22\157\18c\225gsX')..P[(function(L,x)
-                    local ba=''
-                    for b=0,#L-1 do
-                        ba=ba..q(Aa(z(L,b+1),z(x,b%#x+1)))
+                    return ja
+                end)('1A\2U\198\231\144+\241\129\129\186\178\233U\204\233\152#\231\145\201\243','\211\220\142u\170\136\241O\130\245\243')..Z[(function(ba,i)
+                    local ja=''
+                    for ra=0,#ba-1 do
+                        ja=ja..Aa(va(n(ba,ra+1),n(i,ra%#i+1)))
                     end
-                    return ba
-                end)('\206\226Dq\200\228Yb','\186\141\55\5')](oa))
-                d=ga(33405)
+                    return ja
+                end)("\146\185:>\148\191\'-",'\230\214IJ')](ka))
+                D=q(10012)
                 break
             end
         end
-    until d==-6.2487907630375946e-06*1990625142
+    until D==-1654317312+1654305828
 end;
-ua()
+I()
